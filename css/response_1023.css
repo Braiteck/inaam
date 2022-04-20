@@ -703,4 +703,9 @@
     {
         padding: 28px 32px 32px;
     }
+
+    #applications_modal .grid + .grid
+    {
+        margin-top: 16px;
+    }
 }

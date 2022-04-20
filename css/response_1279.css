@@ -713,4 +713,8 @@
     /*-----------
         PopUp
     -----------*/
+    #applications_modal .grid + .grid
+    {
+        margin-top: 20px;
+    }
 }
