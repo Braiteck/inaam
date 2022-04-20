@@ -106,6 +106,16 @@ $(() => {
 		},
 		Thumbs: {
 			autoStart: false,
+		},
+		on: {
+			shouldClose: () => {
+				if ($('#applications_modal')) {
+					Fancybox.show([{
+						src: '#applications_modal',
+						type: 'inline'
+					}])
+				}
+			}
 		}
 	})
 
@@ -113,7 +123,7 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button', function (e) {
+	$('body').on('click', '.tabs button:not(.modal_btn)', function (e) {
 		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {

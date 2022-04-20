@@ -516,4 +516,8 @@
     /*-----------
         PopUp
     -----------*/
+    #applications_modal
+    {
+        padding: 24px;
+    }
 }
