@@ -1,0 +1,148 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    top: auto;
+    bottom: 100px;
+
+    display: block;
+
+    width: 46px;
+    height: 46px;
+    margin: 0;
+
+    transition: background .2s linear;
+    transform: none;
+
+    background: #bdbdbd;
+}
+
+.swiper-button-prev
+{
+    left: 50%;
+
+    margin-left: -570px;
+}
+
+.swiper-button-next
+{
+    right: auto;
+    left: 50%;
+
+    margin-left: -523px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 7px;
+
+    display: block;
+
+    width: 14px;
+    height: 14px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.swiper-button-next:after
+{
+    left: -7px;
+
+    transform: rotate(-225deg);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    background: #3e677d;
+}
+
+
+
+.carousel .swiper-button-next,
+.carousel .swiper-button-prev
+{
+    top: -61px;
+    bottom: auto;
+}
+
+.carousel .swiper-button-prev
+{
+    right: 47px;
+    left: auto;
+
+    margin: 0;
+}
+
+.carousel .swiper-button-next
+{
+    right: 0;
+    left: auto;
+
+    margin: 0;
+}
+
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    right: 50%;
+    bottom: 100px;
+    left: auto;
+
+    display: flex;
+
+    width: auto;
+    height: 16px;
+    margin-right: 134px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 0;
+    background: #a6a7a1;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 11px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    background: #994636;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
