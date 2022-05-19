@@ -109,7 +109,7 @@ $(() => {
 		},
 		on: {
 			shouldClose: () => {
-				if ($('#applications_modal')) {
+				if ($('#applications_modal').length && $('#applications_modal').hasClass('fancybox__content')) {
 					Fancybox.show([{
 						src: '#applications_modal',
 						type: 'inline'
